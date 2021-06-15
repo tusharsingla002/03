@@ -14,8 +14,8 @@ body {
 .tcol-1 {
     border: solid 0px rgb(159, 168, 160);
     border-collapse: separate -2px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: white; border: 10px solid rgb(2, 172, 16);margin-bottom:px ;
 
 
@@ -26,8 +26,8 @@ table{width: 100%;}
 .tcol-2 {
     border: solid 2px black;
     border-collapse: separate 2px solid;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: white;
     
 }
