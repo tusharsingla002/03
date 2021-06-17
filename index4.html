@@ -75,8 +75,14 @@
 
     <script>
        function opennav(){
+           var x = screen.width;
            document.getElementById("mysidebar").style.width = "250px";
-           document.getElementById("maincontent").style.marginLeft = "275px";
+           if (x > 600) {
+                document.getElementById("maincontent").style.marginLeft = "275px";
+            }
+            else {
+                document.getElementById("maincontent").style.marginLeft = "10px";
+            }
        }
        function closeNav(){
         document.getElementById("mysidebar").style.width = "0px";
