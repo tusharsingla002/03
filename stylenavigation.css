@@ -1,0 +1,59 @@
+.openbtn:hover{
+    background-color: rgb(168, 167, 167);
+    cursor: pointer;
+    
+}
+.openbtn{
+    position: absolute;
+    color: white;
+top: 2.5%;
+max-width: 35px;
+right: 1%;
+border: none;
+background-color: black;
+font-size: x-large;
+}
+.openbtn::after{
+    position: relative;
+}
+.mysidebar{
+    background-color: #111;
+    color: white;
+    height: 100%;
+    z-index: 1;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+
+}
+.navigation{
+    background-color: #111;
+    color: #818181;
+    display: block;
+    font-style: normal;
+    margin-left: 17%;
+    
+
+    transition: 0.3s;
+    text-decoration: none;  
+}
+
+.navigation:hover{
+    color: white;
+}
+.closebtn {
+    font-size: x-large;
+    margin-top: 18%;
+    color:#818181;
+    margin-left: 30px;
+    
+}
+
+@media only screen and (max-width = 600px){
+    .mysidebar {padding-top: 15px;}
+    .navigation{font-size: 18px;}
+}
