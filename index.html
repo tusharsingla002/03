@@ -7,19 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
 
-<head>
-
-</head>
-
-<body>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href=>
+        
+    </head>
+    <head>
+        <style>
+            .one1{
+    size: 50px;
+    max-width: 30px;
+    margin-left: 95%;
+    
+    
+}
+svg{position: absolute;
+top: 2.5%;
+max-width: 35px;
+right: 1%;}
+        </style>
+    </head>
+    <body>
+        <div class="one">   <a href="" onclick="func()" id="one" class="one"> <svg focusable="false" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></a>
+        
+        </div>
+    <script src="index.js"></script>
+    </body>
     <h1>My Smart City</h1>
     <p id="description" class="description-1 description-s-1">We are the new generation suppliers and goods sales are
         done by our specialists. Simply select a product and fill your contact details we will reach you as soon as
         possible.Hope you like our service. <br>Any valuable suggestions and comments from you means alot.</p>
 
-        <table >
+    <table >
         <tr class="trow-1 trow-s-1">
             <th class="tcol-1 tcol-s-1"  >
                 <h2><a href="the_boot_shop.html" >the boot shop</a></h2>
@@ -38,6 +60,21 @@
             </th>
         </tr>
     </table>
+
+
+
+
+
+    <script>
+        var elements = document.getElementsByTagName("a"); 
+for(var i=0; i<elements.length; i++){
+    if (elements[i].className == 'one') { 
+         elements[i].onclick = function(){ 
+           alert("yes link clicked!"); 
+   }
+ } 
+}
+    </script>
 
 
 </body>
