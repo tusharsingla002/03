@@ -73,22 +73,39 @@
 
 
 
+
     <script>
-       function opennav(){
-           var x = screen.width;
-           document.getElementById("mysidebar").style.width = "250px";
-           if (x > 600) {
+        var x = screen.width;
+        if (x < 600) {
+                document.getElementById("openbtn").style.color = "black";
+                document.getElementById("openbtn").style.backgroundColor = "aliceblue";
+                
+
+            }
+            
+        
+        function opennav() {
+            if (x > 600) {
+                document.getElementById("mysidebar").style.width = "250px";
+
+            }
+            else {
+                document.getElementById("mysidebar").style.width = "100%";
+
+            }
+
+            if (x > 600) {
                 document.getElementById("maincontent").style.marginLeft = "275px";
             }
             else {
                 document.getElementById("maincontent").style.marginLeft = "10px";
             }
-       }
-       function closeNav(){
-        document.getElementById("mysidebar").style.width = "0px";
-           document.getElementById("maincontent").style.marginLeft = "10px";
+        }
+        function closeNav() {
+            document.getElementById("mysidebar").style.width = "0px";
+            document.getElementById("maincontent").style.marginLeft = "10px";
 
-       }
+        }
     </script>
 
 
