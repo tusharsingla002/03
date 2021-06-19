@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="stylenavigation.css">
+        
+    </head>
+    <head>
+        <style>
+            .one1{
+    size: 50px;
+    max-width: 30px;
+    margin-left: 95%;
+    
+    
+}
+
+
+
+        </style>
+    </head>
+    <body id="maincontent">
+        <div class="one">   <button class="openbtn" id="openbtn" onclick="opennav()">☰</button>
+        
+        </div>
+
+        
+<div class="mysidebar" id="mysidebar"><a href="javascript:void(0)" class="closebtn navigation" onclick="closeNav()">×</a>
+    <a href="about.html" class="navigation"><h3>About</h3></a>
+    <a href="services.html" class="navigation"><h3>Services</h3></a>
+    <!a href="#" class="navigation"></a>
+    <a href="contact.html" class="navigation" ><h3>Contact</h3></a></div>
+
+
+    <script src="index.js"></script>
+    
+    <h1>My Smart City</h1>
+    <p id="description" class="description-1 description-s-1">We are the new generation suppliers and goods sales are
+        done by our specialists. Simply select a product and fill your contact details we will reach you as soon as
+        possible.Hope you like our service. <br>Any valuable suggestions and comments from you means alot.</p>
+
+    <table >
+        <tr class="trow-1 trow-s-1">
+            <th class="tcol-1 tcol-s-1"  >
+                <h2><a href="the_boot_shop.html" ><img src="imgb/S.png" alt="" width="100%" class="i1"></a></h2>
+
+            </th>
+        </tr>
+        </table><table>
+        <tr class="trow-2 trow-s-2">
+            <th class="tcol-2 tcol-s-2">
+                <h2><a href="the_stationeries">the stationeries</a></h2>
+            </th>
+            <th class="tcol-2 tcol-s-2">
+                <h2><a href="the_products">the products</a></h2>
+            </th>
+            <th class="tcol-2 tcol-s-2">
+                <h2><a href="the_eatables">the eatables</a></h2>
+            </th>
+        </tr>
+    </table>
+
+
+
+
+
+
+    <script>
+        var x = screen.width;
+        if (x < 600) {
+                document.getElementById("openbtn").style.color = "black";
+                document.getElementById("openbtn").style.backgroundColor = "aliceblue";
+                
+
+            }
+            
+        
+        function opennav() {
+            if (x > 600) {
+                document.getElementById("mysidebar").style.width = "250px";
+
+            }
+            else {
+                document.getElementById("mysidebar").style.width = "100%";
+
+            }
+
+            if (x > 600) {
+                document.getElementById("maincontent").style.marginLeft = "275px";
+            }
+            else {
+                document.getElementById("maincontent").style.marginLeft = "10px";
+            }
+        }
+        function closeNav() {
+            document.getElementById("mysidebar").style.width = "0px";
+            document.getElementById("maincontent").style.marginLeft = "10px";
+
+        }
+    </script>
+
+
+</body>
+
+</html>
